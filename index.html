@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="swift">
+    1) Difference between Stateful and stateless Component ?<br>
+    Soln:
+          = Note that both types of components can use props.
+    
+          Stateful:- In React, a stateful component is a component that holds some state.
+           If any functional & class component managing state is called stateful component. It has capacity of managing state as well Re-render.
+          They are used when you want to add functionality.
+           we are using constructor, this keyword permitted in it.
+    
+          stateless:- Stateless components, by contrast, have no state.
+           The components that managing only UI are called stateless component.
+          They are used to just show something on the screen.<hr>
+    
+    2) How do you switch one component to another, Conditional Rendering ?<br>
+    Soln:Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator to create elements representing the current state, and let React update the UI to match them.<hr>
+    
+    3) Difference between Axios and fetch ?<br>
+    Soln:
+           To communicate with servers through the HTTP protocol. This can be easily achieved using Fetch or Axios.
+           Fetch and Axios are very similar in functionality.
+    
+          fetch():-
+           The Fetch API is perfectly capable of reproducing the key features of Axios.
+          It provide JS interface for manipulating requests and responses.
+           This method returns a Promise that can be used to retrieve the response of the request.
+    
+           Axios:-
+           Axios is a Javascript library used to make HTTP requests from node.js or XMLHttpRequests from the browser.
+          They have url in request object.
+           It supports the Promise API that is native to JS ES6.
+          It also has the ability to cancel requests.<hr>
+    
+    4) What are React Life cycles Explain each one with Example?<br>
+    Soln:
+    
+    
+           Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+           The three phases are: Mounting, Updating, and Unmounting.
+          
+           Initialization: This is the stage where the component is constructed with the given Props and default state. This is done in the constructor of a Component Class.
+    
+           Mounting: Mounting is the stage of rendering the JSX returned by the render method itself.
+             constructor
+             componentDidMount
+             render
+    
+           Updating: Updating is the stage when the state of a component is updated and the application is repainted.
+             componentWillReceiveProps
+            
+             getDerivedStateFromProps()
+             shouldComponentUpdate()
+             getSnapshotBeforeUpdate()
+             componentDidUpdate()
+    
+           Unmounting: <br>
+             As the name suggests Unmounting is the final step of the component lifecycle where the component is removed from the page.
+             and if user came and refresh the page the lifecycle will start again with new component.
+             componentWillUnmount<hr>
+    
+    5) What is UseState Hook ? (Implementation) ?<br>
+    Soln:
+         The React useState Hook allows us to track state in a function component. 
+         State generally refers to data or properties that need to be tracking in an application.<hr>
+    
+    6) What is useEffect Hook ? (Implementation) ?
+    Soln:
+           The useEffect Hook allows you to perform side effects in your components.
+           Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+           useEffect accepts two arguments. The second argument is optional.
+           import React, { useState, useEffect } from 'react';<hr>
+    
+    
+
+    </div>
+</body>
+</html>
